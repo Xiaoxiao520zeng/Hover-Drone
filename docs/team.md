@@ -4,7 +4,7 @@
 
 | 工作范围 | 主要目录 | 负责人 GitHub 账号 | 评审或协作成员 |
 | --- | --- | --- | --- |
-| 项目统筹、需求与验收 | `docs/`、Issues | 待填写 | 待填写 |
+| 项目统筹、需求与验收 | `docs/`、Issues | Air.Zhen | 全体成员 |
 | 机械结构与装配 | `hardware/mechanical/` | 待填写 | 待填写 |
 | 电子、电源与物料 | `hardware/electronics/`、`hardware/bom.csv` | 待填写 | 待填写 |
 | 飞控与嵌入式 | `firmware/` | 待填写 | 待填写 |
