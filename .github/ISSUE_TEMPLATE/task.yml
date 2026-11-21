@@ -13,18 +13,13 @@ body:
   - type: dropdown
     id: modules
     attributes:
-      label: 涉及模块
+      label: 所属部分
       multiple: true
       options:
-        - 项目文档与参考资料
-        - 机械结构
-        - 电子与接线
-        - 嵌入式与固件
-        - 机载软件
-        - 上位机或地面站
-        - 仿真
-        - 实验与数据
-        - 跨模块协作
+        - 机械臂部分
+        - 无人机部分
+        - 两组联合联调
+        - 项目公共资料
   - type: textarea
     id: deliverables
     attributes:
