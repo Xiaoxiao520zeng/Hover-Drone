@@ -1,0 +1,49 @@
+name: 项目任务
+description: 规划资料整理、硬件设计、代码开发或实验工作。
+title: "[任务] "
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 任务背景与目标
+      description: 说明要解决什么问题，以及这次任务完成到什么程度。
+      placeholder: "当前情况：\n本次目标："
+    validations:
+      required: true
+  - type: dropdown
+    id: modules
+    attributes:
+      label: 涉及模块
+      multiple: true
+      options:
+        - 项目文档与参考资料
+        - 机械结构
+        - 电子与接线
+        - 嵌入式与固件
+        - 机载软件
+        - 上位机或地面站
+        - 仿真
+        - 实验与数据
+        - 跨模块协作
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 交付物
+      description: 列出需要提交到仓库的文件、代码或记录及其目标目录。
+      placeholder: "- [ ] 交付物及保存路径\n- [ ] 使用或复现说明"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 写清楚如何判断任务完成，尽量包含可检查的结果。
+      placeholder: "- [ ] 检查方法与通过条件\n- [ ] 相关负责人完成确认"
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 依赖与协作事项
+      description: 填写前置任务、待确认的接口或需要谁配合；无则留空。
+      placeholder: "依赖 #任务编号；需要确认的接口或硬件版本："

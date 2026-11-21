@@ -1,0 +1,34 @@
+# 仓库管理员设置清单
+
+本文件是待执行清单，**不表示 GitHub 设置已经生效**。项目负责人按团队情况完成后勾选。
+
+## 首次使用
+
+- [ ] 在 [成员设置](https://github.com/Xiaoxiao520zeng/Hover-Drone/settings/access) 邀请团队成员，确认邀请已被接受且成员可以提交分支。
+- [ ] 确认仓库公开范围符合项目约定，明确哪些材料可以上传。
+- [ ] 在[项目计划](project-plan.md)中确认目标与验收条件，在[分工表](team.md)中填写负责人。
+- [ ] 每个模块创建一个首批任务 Issue，先上传现有资料和最小可运行版本。
+- [ ] 在 GitHub 支持的规则设置中为 `main` 配置“通过 PR 合并”和“至少一人评审”；团队人手不足或套餐不支持时，先执行人工评审约定。
+- [ ] 团队完成一次“创建任务 → 分支上传 → PR 评审 → 合并”的试运行。
+
+可参考 [GitHub 分支保护文档](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)。暂未配置自动检查时，不添加不存在的必需状态检查。
+
+## 按需增加
+
+- 成员和目录归属稳定后，增加 `CODEOWNERS` 自动请求模块负责人评审。
+- 技术栈确定、构建命令可复现后，为对应模块增加持续集成检查。
+- 首次需要协作修改大体积二进制源文件时，评估 Git LFS 和配额；共享存储中的数据仍维护访问索引。
+- 对外发布前，由项目负责人确认源代码、设计文件及第三方材料的许可，再添加适合的许可证。
+
+## 现有资料归档示例
+
+若团队现有资料包含结构模型、接线图或试验脚本，可按以下方式整理；这里只说明目标位置，不代表文件已导入。
+
+| 已有内容 | 建议位置 | 补充说明 |
+| --- | --- | --- |
+| `树枝无人机_STL`、倒置桨、底置动力架、双层底置、Jetson 立装窄板等结构方案 | `hardware/mechanical/<方案名>/` | 每种候选保留生成脚本、装配说明、预览与 STL；团队确认采用方案后再标记当前版本 |
+| `树枝无人机_板级接线图`、`树枝无人机_整机供电流程图` | `hardware/electronics/wiring/` | DXF 源文件与 PNG 预览成对归档，注明适用硬件版本 |
+| 无人机外观概念图、刚性悬挂机构参考图片 | `docs/references/concepts/` | 写明来源、用途和方案状态；文献图片先核对转载条件 |
+| `rod_perching_test` 中的横杆对准、视觉与通信代码 | `software/onboard/rod-perching/` | 保留依赖与原说明，标注现有原型的适用范围及未完成验证 |
+| `rod_perching_test/switch_reader` 中的开关读取固件 | `firmware/switch-reader/` | 拆分后同步修改代码 README 中的路径链接，记录串口协议 |
+| 试验结果、参数与数据 | `experiments/<日期>_<主题>/` | 记录代码提交、条件、结论与原始数据位置 |

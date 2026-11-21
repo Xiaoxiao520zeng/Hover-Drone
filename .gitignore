@@ -1,0 +1,51 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local credentials and configuration; commit a sanitized example instead
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build products and dependencies
+node_modules/
+build/
+dist/
+install/
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+
+# Raw experiment files stay in shared storage; keep records and indexes in Git
+experiments/**/raw/
+*.bag
+*.db3
+*.ulg
+*.tlog
+
+# CAD lock and recovery files
+~$*
+*.lck
+*.bak

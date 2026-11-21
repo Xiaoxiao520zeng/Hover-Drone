@@ -1,0 +1,41 @@
+name: 问题反馈
+description: 记录代码、硬件、文档或实验中的异常，帮助团队定位和复现。
+title: "[问题] "
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: 实际现象
+      description: 描述发生了什么，以及对当前工作的影响。
+      placeholder: "异常现象：\n出现频率：\n影响范围："
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 写明从什么初始状态开始；暂时无法复现时，说明已知触发条件。
+      placeholder: "1. 初始条件\n2. 执行操作\n3. 观察到的结果"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+      placeholder: "按设计或验收要求，此时应当出现什么结果？"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与版本
+      description: 只填写与问题相关的项目；未知的版本请明确写“未知”。
+      placeholder: "代码提交或分支：\n硬件或图纸版本：\n操作系统与软件版本：\n参数或配置文件路径：\n实验记录链接："
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 日志、截图与补充信息
+      description: 可粘贴相关日志片段或添加文件链接；大文件请提供团队可访问的存储链接。
+      placeholder: "日志片段、截图、测量结果、相关 Issue 或实验记录链接。"
