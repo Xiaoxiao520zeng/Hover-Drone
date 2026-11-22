@@ -1,0 +1,29 @@
+连接编号,源板卡,源接口与信号,目标板卡,目标接口与信号,方向,电气或协议,适用条件,核验状态,来源
+W02-VIN,A1 PMU2Lite 15V候选,POWER 三路15V原装线束,A2 X25 Evo,POWER C1 三路VIN,A1 -> A2,15V候选；X25允许10～18V,候选PMU；使用匹配原装线束,未实物核验,https://manual.cuav.net/power-module/PMU2_Lite_manual_cn.pdf
+W02-GND,A1 PMU2Lite 15V候选,POWER 三路GND,A2 X25 Evo,POWER C1 三路GND,参考地,GND,候选PMU；使用匹配原装线束,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W02-CANH,A1 PMU2Lite 15V候选,POWER CAN_H,A2 X25 Evo,POWER C1 CAN1_H,双向,CAN1_H,候选PMU,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W02-CANL,A1 PMU2Lite 15V候选,POWER CAN_L,A2 X25 Evo,POWER C1 CAN1_L,双向,CAN1_L,候选PMU,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W04-TX,A2 X25 Evo,TELEM2 TX；从5V端起第2位,A5-C 未定载板,UART RX；物理脚不分配,飞控 -> 机载,UART；X25信号电平仍需厂家核实,逻辑分配；载板未选且电平未核实，不放行直连,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W04-RX,A5-C 未定载板,UART TX；物理脚不分配,A2 X25 Evo,TELEM2 RX；从5V端起第3位,机载 -> 飞控,UART；两端电平必须匹配,逻辑分配；载板未选且电平未核实，不放行直连,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W04-GND,A2 X25 Evo,TELEM2 GND；从5V端起第6位,A5-C 未定载板,信号GND；物理脚不分配,参考地,GND,逻辑分配；不能推定为P3768针号,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W03-M1,A2 X25 Evo,M1 S,A3 Tekko32 V1.5候选,M1控制信号；按修订图定位,飞控 -> 电调,旧方案拟DShot300；信号电平和固件输出配置核对,候选电调；原厂图示不等于任意视角的数字针号,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W03-M2,A2 X25 Evo,M2 S,A3 Tekko32 V1.5候选,M2控制信号；按修订图定位,飞控 -> 电调,旧方案拟DShot300；信号电平和固件输出配置核对,候选电调；原厂图示不等于任意视角的数字针号,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W03-M3,A2 X25 Evo,M3 S,A3 Tekko32 V1.5候选,M3控制信号；按修订图定位,飞控 -> 电调,旧方案拟DShot300；信号电平和固件输出配置核对,候选电调；原厂图示不等于任意视角的数字针号,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W03-M4,A2 X25 Evo,M4 S,A3 Tekko32 V1.5候选,M4控制信号；按修订图定位,飞控 -> 电调,旧方案拟DShot300；信号电平和固件输出配置核对,候选电调；原厂图示不等于任意视角的数字针号,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W03-GND,A2 X25 Evo,PWM负排 -,A3 Tekko32 V1.5候选,信号GND,参考地,GND,飞控正排+留空；不可把主电流导入信号地线,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+PWR-ESC-P,A1 PMU2Lite候选,BATT-OUT+；经QS8/J1,A3 Tekko32候选,BAT+,电源 -> 负载,原始电池电压，非稳压15V,REV D候选主电源通路；实物型号需核对,未实物核验,https://manual.cuav.net/power-module/PMU2_Lite_manual_cn.pdf
+PWR-ESC-N,A1 PMU2Lite候选,BATT-OUT-；经J1,A3 Tekko32候选,BAT-,电源回路,原始电池负极,REV D候选主电源通路,未实物核验,https://manual.cuav.net/power-module/PMU2_Lite_manual_cn.pdf
+W05-IN,A12 未定分线板,P1原始电池网络；经辅助保险支路,A4 BEC12S-PRO候选,IN / G,电源 -> 稳压,BEC输入9～55V；旧方案使用电池支路,P1为本地端口名；实际板型和极性需核对,未实物核验,https://www.mateksys.com/?portfolio=bec12s-pro
+W05-OUT,A4 BEC12S-PRO候选,OUT / G,A5-C 未定载板,载板电源入口；物理口不分配,稳压 -> 载板,旧方案拟12V；实际电压按最终载板要求确定,12V非模块默认值；P3768 J16仅在独立参考段说明,未实物核验,https://www.mateksys.com/?portfolio=bec12s-pro
+W06-DATA,A5-C 未定载板,USB主机口；物理口不分配,A7 Y-Adapter候选,DATA,USB双向,成品USB数据线,载板及相机方案未定,未实物核验,https://docs.luxonis.com/hardware/products/Y-Adapter
+W06-OUT,A7 Y-Adapter候选,OUT,OAK-D Pro候选,USB-C,数据与5V供电,成品适配器连接,相机为现有原型候选，不表示最终采用,未实物核验,https://docs.luxonis.com/hardware/products/Y-Adapter
+W06-PWR,A6 未定相机稳压模块,合规5V输出；板针号不分配,A7 Y-Adapter候选,POWER,稳压 -> 适配器,5V；禁止用原始电池电压替代,A6型号未选，不能填写其PCB针脚,未实物核验,https://docs.luxonis.com/hardware/products/Y-Adapter
+W07-CANH,A2 X25 Evo,CAN2 CAN_H；从5V端起第2位,A8 未定CAN扩展板,CAN_H；板针号不分配,双向,CAN2_H,扩展板与总线端接需实物核对,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W07-CANL,A2 X25 Evo,CAN2 CAN_L；从5V端起第3位,A8 未定CAN扩展板,CAN_L；板针号不分配,双向,CAN2_L,扩展板与总线端接需实物核对,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+W07-GND,A2 X25 Evo,CAN2 GND；从5V端起第4位,A8 未定CAN扩展板,GND；板针号不分配,参考地,GND,是否使用CAN口5V供电按扩展板规格决定,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+SW-COM,微动开关候选,COM,MCU-SW 未定板,GND,触点参考,按MCU输入上拉设计核对,仅现有代码示例；未确定板型,未实物核验,local-prototype:switch_reader.ino
+SW-NO,微动开关候选,NO,MCU-SW 未定板,D2 INPUT_PULLUP示例,开关 -> MCU,上拉电压随实际MCU定义,D2不是X25或Jetson的针脚,未实物核验,local-prototype:switch_reader.ino
+SW-USB,MCU-SW 未定板,USB设备串口,A5-C 未定载板,USB主机口；物理口不分配,MCU -> 机载,原型115200；0/1逐行文本,具体端口和设备名选板后登记,未实物核验,local-prototype:switch_reader.ino
+GRIP-S,A2 X25 Evo,执行器PWM通道S；通道尚未分配,机械臂执行器未定型,信号输入；端口尚未分配,飞控 -> 执行器,电平和协议由执行器及固件配置核定,Gripper 1不等于物理M1；不制作最终线束,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+GRIP-PWR,机械臂BEC未选,匹配执行器的电源输出,机械臂执行器未定型,电源 / GND,电源 -> 执行器,按执行器额定及峰值需求选型,飞控PWM正排不是内置BEC输出,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg
+GRIP-GND,A2 X25 Evo,PWM负排 - / 信号参考地,机械臂执行器未定型,信号GND及BEC输出地的公共参考路径,参考地,GND,按实际接线图核对共同参考地路径；不默认已由其他电源线实现共地,未实物核验,https://doc.cuav.net/assets/controller/x25/pinouts.jpg

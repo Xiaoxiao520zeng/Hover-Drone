@@ -1,13 +1,13 @@
 物料编号,模块,名称,型号或规格,数量,单位,对应设计版本,采购或参考链接,备注,状态
-UAV-01,飞控,飞行控制器,X25 Evo,1,套,项目确定平台,code/README.md,项目已确定；需登记实机固件版本并验证当前 ArduCopter GUIDED 原型及外部定位和通信适配；不表示采购库存已登记；数量为单机规划数量,已确认
-UAV-02,机载计算,机载计算平台,Jetson Orin,1,套,项目确定平台,code/README.md,项目已确定；具体子型号与载板及 JetPack 版本需设备登记；旧模型的 NX 16 GB 加 P3768-A04 组合不视为已确认；数量为单机规划数量,已确认
+UAV-01,飞控,飞行控制器,X25 Evo,1,套,项目确定平台,design/board-interfaces.md,项目已确定；需登记实机固件版本并验证当前 ArduCopter GUIDED 原型及外部定位和通信适配；不表示采购库存已登记；数量为单机规划数量,已确认
+UAV-02,机载计算,机载计算平台,Jetson Orin,1,套,项目确定平台,design/board-interfaces.md,项目已确定Orin系列，载板型号尚未确定；P3768接口仅为条件参考；具体模块、系统和JetPack需登记；数量为单机规划数量,已确认
 UAV-03,机体搭载,机体与搭载结构,Quad X Jetson 立装窄板参考模型,按设计核定,套,候选结构基线 UAV-E-002 Rev D,design/README.md,已有尺寸与装配资料；需按实际设备核对并验证承载及干涉,候选
 UAV-04,机载视觉,RGB-D 相机,OAK-D Pro,按设计核定,台,既有联调原型,code/README.md,现有原型依赖设备；整机采用待确认并需验证实际安装后的深度可用范围,候选
 UAV-05,动力,电机,iFlight XING2 2506 1500KV,按设计核定,只,候选结构基线 UAV-E-002 Rev D,design/README.md,来自既有结构资料；须与实桨和整机载荷联合验证后定案,候选
-UAV-06,动力,电调,Holybro Tekko32 F4 4-in-1 50 A,按设计核定,块,候选结构基线 UAV-E-002 Rev D,design/README.md,需核对实物版本与接口及动力组合余量,候选
+UAV-06,动力,电调,Holybro Tekko32 F4 4-in-1 50 A,按设计核定,块,候选结构基线 UAV-E-002 Rev D,design/board-interfaces.md,需核对实物版本与接口及动力组合余量,候选
 UAV-07,动力,螺旋桨,选型依据见备注,按设计核定,副,动力需求草案 0.1,design/README.md,原图桨型需确认具体型号；按实测电流与温升及桨扫净空确定,计划
 UAV-08,电源,动力电池,6S LiPo 参考规格,按设计核定,块,候选结构基线 UAV-E-002 Rev D,design/README.md,容量与放电能力及接头应按实际载荷和动力验证核定,候选
-UAV-09,电源,飞控电源模块,PMU 2 Lite 15 V 参考方案,按设计核定,套,候选结构基线 UAV-E-002 Rev D,design/README.md,来自旧接线资料；须核对实机供电兼容性及负载下电压范围,候选
-UAV-10,电源,机载计算稳压模块,Matek BEC12S-PRO 参考方案,按设计核定,块,候选结构基线 UAV-E-002 Rev D,design/README.md,按实际 Orin 载板输入与启动及运行负载复核；不直接沿用旧图设定,候选
-UAV-11,电源,相机供电与 USB 数据连接,选型依据见备注,按设计核定,套,相机供电需求草案 0.1,design/README.md,既有资料含独立稳压与 Luxonis Y-adapter；按最终相机及数据供电方式核定,计划
-UAV-12,连接与安装,线束接插件及固定件,选型依据见备注,按设计核定,套,IF-01 / IF-02 接口草案,../docs/interfaces.md,按实物电气需求及装配走线确认规格数量和应力释放,计划
+UAV-09,电源,飞控电源模块,PMU 2 Lite 15 V 参考方案,按设计核定,套,候选结构基线 UAV-E-002 Rev D,design/board-interfaces.md,来自旧接线资料；须核对实机供电兼容性及负载下电压范围,候选
+UAV-10,电源,机载计算稳压模块,Matek BEC12S-PRO 参考方案,按设计核定,块,候选结构基线 UAV-E-002 Rev D,design/board-interfaces.md,按实际 Orin 载板输入与启动及运行负载复核；不直接沿用旧图设定,候选
+UAV-11,电源,相机供电与 USB 数据连接,选型依据见备注,按设计核定,套,相机供电需求草案 0.1,design/board-interfaces.md,既有资料含独立稳压与 Luxonis Y-adapter；按最终相机及数据供电方式核定,计划
+UAV-12,连接与安装,线束接插件及固定件,选型依据见备注,按设计核定,套,IF-01 / IF-02 接口草案,design/board-interfaces.md,按实物电气需求及装配走线确认规格数量和应力释放,计划
