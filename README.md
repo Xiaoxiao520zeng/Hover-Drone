@@ -24,6 +24,7 @@
 | 机械臂执行控制、开关读取与状态反馈代码 | [robotic-arm/code/](robotic-arm/code/README.md) | 依赖、运行方法、接口与验证结果 |
 | 机械臂物料清单 | [robotic-arm/bom.csv](robotic-arm/bom.csv) | 型号、数量、设计版本与状态；本组维护、组负责人核对 |
 | 无人机机体、搭载安装、供电与接线 | [drone/design/](drone/design/README.md) | 源文件、导出件、适用版本 |
+| 飞控与各板卡接口、板间连接 | [板卡接口登记](drone/design/board-interfaces.md)、[wiring.csv](drone/design/wiring.csv) | 信号方向、电源/电平、适用板型与核验状态 |
 | 飞控配置、机载视觉、对准与飞行任务代码 | [drone/code/](drone/code/README.md) | 环境、运行方法、输入输出与验证结果 |
 | 无人机物料清单 | [drone/bom.csv](drone/bom.csv) | 型号、数量、设计版本与状态；本组维护、组负责人核对 |
 | 实验方案、结果与数据索引 | [experiments/](experiments/README.md) | 硬件版本、代码提交、参数与结论 |

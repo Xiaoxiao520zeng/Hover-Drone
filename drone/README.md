@@ -5,6 +5,7 @@
 | 内容 | 位置 |
 | --- | --- |
 | 机体结构、搭载、电路和接线资料 | [design/](design/README.md) |
+| 飞控与板卡接口、板间连接 | [接口登记](design/board-interfaces.md)、[线路表](design/wiring.csv) |
 | 飞控配置、机载程序及任务代码 | [code/](code/README.md) |
 | 本组物料清单 | [bom.csv](bom.csv) |
 
